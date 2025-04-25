@@ -1,0 +1,6 @@
+{
+  "welcome": "Welcome to Recipe AI",
+  "description": "Simply type a few ingredients and generate a recipe.",
+  "generate": "Generate",
+  "loading": "Loading..."
+}

@@ -95,3 +95,48 @@
   font-weight: bold;
   text-align: left; /* Align text to the left */
 }
+
+.custom-select {
+  position: relative;
+  width: 150px;
+}
+
+.selected-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.selected-option img {
+  margin-right: 5px;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1000;
+  width: 100%;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.option img {
+  margin-right: 5px;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,6 @@
+{
+  "welcome": "Üdvözöljük a Recipe AI-ban",
+  "description": "Írjon be néhány hozzávalót, és generáljon receptet.",
+  "generate": "Generálás",
+  "loading": "Betöltés..."
+}

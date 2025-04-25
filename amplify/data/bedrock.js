@@ -1,8 +1,8 @@
 export function request(ctx) {
-  const { ingredients = [] } = ctx.args;
+  const { ingredients = [], language = "en" } = ctx.args;
 
-  // Construct the prompt with the provided ingredients
-  const prompt = `Suggest a recipe idea using these ingredients: ${ingredients.join(", ")}.`;
+  // Construct the prompt with the provided ingredients and language
+  const prompt = `Suggest a recipe idea using these ingredients: ${ingredients.join(", ")} in ${language} language.`;
 
   // Return the request configuration
   return {
@@ -26,6 +26,7 @@ export function request(ctx) {
             ],
           },
         ],
+        language: language, // Pass the selected language to the model
       }),
     },
   };
