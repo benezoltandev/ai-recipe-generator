@@ -9,15 +9,15 @@ import { useTranslation } from "react-i18next";
 import CustomLanguageSelect from "./components/CustomLanguageSelect";
 import { TranslateClient, TranslateTextCommand } from "@aws-sdk/client-translate";
 
-import "@aws-amplify/ui-react/styles.css";
-
 Amplify.configure(outputs);
 
 const amplifyClient = generateClient<Schema>({
   authMode: "userPool",
 });
 
-const translateClient = new TranslateClient({ region: "us-east-1" });
+const translateClient = new TranslateClient({
+  region: "us-east-1",
+});
 
 const translateText = async (text: string, targetLanguage: string): Promise<string> => {
   try {
@@ -34,7 +34,7 @@ const translateText = async (text: string, targetLanguage: string): Promise<stri
   }
 };
 
-function App() {
+const App = () => {
   const { t, i18n } = useTranslation();
   const [result, setResult] = useState<string>("");
   const [loading, setLoading] = useState(false);
@@ -120,6 +120,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
