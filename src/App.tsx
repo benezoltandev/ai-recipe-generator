@@ -47,7 +47,7 @@ function App() {
         <h1 className="main-header">
           Meet Your Personal
           <br />
-          <span className="highlight">Recipe AI</span>
+          <span className="highlight">Recipe AI v2</span>
         </h1>
         <p className="description">
           Simply type a few ingredients using the format ingredient1,
